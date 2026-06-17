@@ -25,7 +25,7 @@
       line-height: 1.6;
     }
 
-    /* BARRA DE NAVEGAÇÃO */
+    /* BARRA DE NAVEGAÇÃO PROFISSIONAL & BLINDADA */
     nav {
       position: fixed;
       top: 0; width: 100%;
@@ -46,6 +46,7 @@
       display: flex;
       align-items: center;
       text-decoration: none;
+      flex-shrink: 0; /* Impede a logo de amassar ou espremer o menu */
     }
     .logo-img {
       height: 60px;
@@ -56,16 +57,17 @@
     .nav-menu {
       display: flex;
       align-items: center;
+      gap: 18px; /* Espaçamento otimizado */
     }
 
     .nav-menu a {
       text-decoration: none;
       color: var(--primary-navy);
-      font-weight: 600;
-      font-size: 13px;
+      font-weight: 700;
+      font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-left: 24px;
+      letter-spacing: 0.5px;
+      white-space: nowrap; /* Evita quebra de palavras para duas linhas no desktop */
       transition: color 0.2s;
     }
     .nav-menu a:hover {
@@ -234,13 +236,14 @@
 
     footer { padding: 40px 0; text-align: center; background: white; border-top: 1px solid #e2e8f0; }
 
-    /* RESPONSIVIDADE */
+    /* RESPONSIVIDADE & AJUSTES DE BREAKPOINT PARA EVITAR QUEBRA */
     @media (max-width: 1100px) {
       .riscos-grid { grid-template-columns: repeat(2, 1fr); }
       .grid-4 { grid-template-columns: repeat(2, 1fr); }
     }
 
-    @media (max-width: 768px) {
+    /* Modificado de 768px para 1024px para blindar notebooks pequenos e tablets */
+    @media (max-width: 1024px) {
       .grid-selo { grid-template-columns: 1fr !important; gap: 30px; }
       .riscos-grid, .grid-4 { grid-template-columns: 1fr !important; gap: 25px; }
       
@@ -255,15 +258,15 @@
         box-shadow: 0 10px 25px rgba(11, 30, 54, 0.1); border-radius: 4px;
         border: 1px solid #e2e8f0; opacity: 0; visibility: hidden;
         transform: translateY(-10px); transition: all 0.3s ease-in-out;
+        gap: 0;
       }
       .nav-menu.active { opacity: 1; visibility: visible; transform: translateY(0); }
-      .nav-menu a { margin: 0; padding: 12px 25px; width: 100%; text-align: left; display: block; }
+      .nav-menu a { margin: 0; padding: 12px 25px; width: 100%; text-align: left; display: block; white-space: normal; }
     }
   </style>
 </head>
 <body>
 
-  <!-- BARRA DE NAVEGAÇÃO -->
   <nav>
     <div class="nav-container">
       <a href="#inicio" class="logo-link">
@@ -277,16 +280,15 @@
       <div class="nav-menu" id="nav-menu-list">
         <a href="#inicio">Início</a>
         <a href="#sucesso">Caso de Sucesso</a>
-        <a href="#selo">Selo Super Carioca</a>
-        <a href="#desafios">Por que Manutenir?</a>
+        <a href="#selo">O Selo</a>
+        <a href="#desafios">Vantagens</a>
         <a href="#equipamentos">Escopo</a>
         <a href="#roi">Retorno (ROI)</a>
-        <a href="#contato">Quero o Selo Super Carioca</a>
+        <a href="#contato">Quero o Selo</a>
       </div>
     </div>
   </nav>
 
-  <!-- SEÇÃO 1: HERO -->
   <section class="hero" id="inicio">
     <div class="hero-content">
       <img src="SuperCarioca.png" alt="Refrigeração Super Carioca" class="hero-brand-img">
@@ -300,7 +302,6 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 2: CASO DE SUCESSO -->
   <section class="section-padding bg-alt" id="sucesso">
     <div class="container" style="text-align: center;">
       <h2 style="max-width: 800px; margin: 0 auto 15px;">Quem tem grandes estruturas, confia na nossa gestão</h2>
@@ -326,7 +327,6 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 3: SELO SUPER CARIOCA -->
   <section class="section-padding" id="selo">
     <div class="container">
       <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
@@ -354,7 +354,7 @@
             </li>
             <li style="margin-bottom: 0; display: flex; align-items: flex-start;">
               <span style="color:var(--accent-blue); margin-right:12px; font-weight: bold;">✔</span> 
-              <span><strong>Conformidade e Auditoria:</strong> Facilidade total para comprovar rotinas de manutenção em fiscalizações sanitárias and auditorias internas ou governamentais.</span>
+              <span><strong>Conformidade e Auditoria:</strong> Facilidade total para comprovar rotinas de manutenção em fiscalizações sanitárias e auditorias internas ou governamentais.</span>
             </li>
           </ul>
         </div>
@@ -362,7 +362,6 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 4: POR QUE MANUTENIR? -->
   <section class="section-padding bg-alt" id="desafios">
     <div class="container">
       <div style="text-align: center; max-width: 800px; margin: 0 auto 30px;">
@@ -409,7 +408,7 @@
         </div>
         <div class="risco-item-card">
           <h4>10. Redução de Vida Útil</h4>
-          <p>O effort mecânico severo acelera o desgaste de compressores e turbinas, inutilizando ativos valiosos muito antes do tempo.</p>
+          <p>O esforço mecânico severo acelera o desgaste de compressores e turbinas, inutilizando ativos valiosos muito antes do tempo.</p>
         </div>
         <div class="risco-item-card">
           <h4>11. Risco de Incêndios</h4>
@@ -423,7 +422,6 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 5: ESCOPO -->
   <section class="section-padding" id="equipamentos">
     <div class="container">
       <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
@@ -452,7 +450,6 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 6: ROI -->
   <section class="section-padding bg-alt" id="roi">
     <div class="container">
       <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
@@ -519,7 +516,6 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 7: TEXTO ATUALIZADO SEM E-MAIL -->
   <section class="section-padding bg-dark" id="contato">
     <div class="container">
       <div class="contato-layout">
@@ -538,7 +534,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container">
       <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 0;">
