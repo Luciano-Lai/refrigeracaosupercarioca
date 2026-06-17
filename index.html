@@ -242,7 +242,6 @@
       .grid-4 { grid-template-columns: repeat(2, 1fr); }
     }
 
-    /* Modificado de 768px para 1024px para blindar notebooks pequenos e tablets */
     @media (max-width: 1024px) {
       .grid-selo { grid-template-columns: 1fr !important; gap: 30px; }
       .riscos-grid, .grid-4 { grid-template-columns: 1fr !important; gap: 25px; }
@@ -267,6 +266,7 @@
 </head>
 <body>
 
+  <!-- BARRA DE NAVEGAÇÃO -->
   <nav>
     <div class="nav-container">
       <a href="#inicio" class="logo-link">
@@ -289,6 +289,7 @@
     </div>
   </nav>
 
+  <!-- SEÇÃO 1: HERO -->
   <section class="hero" id="inicio">
     <div class="hero-content">
       <img src="SuperCarioca.png" alt="Refrigeração Super Carioca" class="hero-brand-img">
@@ -302,6 +303,7 @@
     </div>
   </section>
 
+  <!-- SEÇÃO 2: CASO DE SUCESSO -->
   <section class="section-padding bg-alt" id="sucesso">
     <div class="container" style="text-align: center;">
       <h2 style="max-width: 800px; margin: 0 auto 15px;">Quem tem grandes estruturas, confia na nossa gestão</h2>
@@ -327,11 +329,12 @@
     </div>
   </section>
 
+  <!-- SEÇÃO 3: SELO SUPER CARIOCA -->
   <section class="section-padding" id="selo">
     <div class="container">
       <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
         <h2>Selo Super Carioca</h2>
-        <p>Fixado diretamente nos seus equipamentos, o selo utiliza tecnologia para transformar a manutenção preventiva em uma ferramenta de gestão ativa para a sua diretoria.</p>
+        <p>Fixado diretamente nos seus equipamentos, o selo utiliza tecnologia para transformar a manutenção preventiva em uma ferramenta de gestão activa para a sua diretoria.</p>
       </div>
 
       <div class="grid-selo">
@@ -362,6 +365,7 @@
     </div>
   </section>
 
+  <!-- SEÇÃO 4: POR QUE MANUTENIR? -->
   <section class="section-padding bg-alt" id="desafios">
     <div class="container">
       <div style="text-align: center; max-width: 800px; margin: 0 auto 30px;">
@@ -422,6 +426,7 @@
     </div>
   </section>
 
+  <!-- SEÇÃO 5: ESCOPO -->
   <section class="section-padding" id="equipamentos">
     <div class="container">
       <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
@@ -450,6 +455,7 @@
     </div>
   </section>
 
+  <!-- SEÇÃO 6: ROI -->
   <section class="section-padding bg-alt" id="roi">
     <div class="container">
       <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
@@ -464,7 +470,8 @@
               <th style="padding: 18px 20px; font-weight: 600;">Segmento</th>
               <th style="padding: 18px 20px; font-weight: 600;">Riscos Maiores (sem manutenção)</th>
               <th style="padding: 18px 20px; font-weight: 600;">Perda de Oportunidade</th>
-              <th style="padding: 18px 20px; font-weight: 600;">Solução da Manutenção (Selo + QR Code)</th>
+              <!-- NOME DO CABEÇALHO ATUALIZADO COERENTE COM A MARCA -->
+              <th style="padding: 18px 20px; font-weight: 600; color: #38bdf8;">Selo Super Carioca</th>
               <th style="padding: 18px 20px; font-weight: 600; color: var(--accent-blue);">Ganho em Gestão de Ativos & Caixa</th>
               <th style="padding: 18px 20px; font-weight: 600; background-color: #122844;">Economia por ano</th>
             </tr>
@@ -474,7 +481,8 @@
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Escritórios</td>
               <td style="padding: 18px 20px;">Salas sem janelas param; absenteísmo; conta +20%</td>
               <td style="padding: 18px 20px;">Queda de produtividade; sem planejamento de troca</td>
-              <td style="padding: 18px 20px;">Histórico + alerta de troca com 90 dias</td>
+              <!-- CONTEÚDO REVISADO DA COLUNA -->
+              <td style="padding: 18px 20px;">QR Code monitora a exaustão de CO₂ e ativa alertas automáticos de troca de filtros a cada 90 dias.</td>
               <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Mapeia o desgaste de Chillers para evitar que salas parem em dias úteis.</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 8.000 – R$ 25.000</td>
             </tr>
@@ -482,7 +490,8 @@
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Hotéis</td>
               <td style="padding: 18px 20px;">Mofo; reclamações no Booking; vírus; incêndio</td>
               <td style="padding: 18px 20px;">10 diárias perdidas por quarto; avaliações negativas</td>
-              <td style="padding: 18px 20px;">Selo na recepção; troca na baixa temporada</td>
+              <!-- CONTEÚDO REVISADO DA COLUNA -->
+              <td style="padding: 18px 20px;">Laudos e histórico técnico digitalizados por quarto, rastreando dreno e serpentina para auditorias ágeis.</td>
               <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Substituição preditiva de evaporadoras eliminando surpresas na alta temporada.</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 30.000 – R$ 150.000</td>
             </tr>
@@ -490,7 +499,8 @@
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Academias</td>
               <td style="padding: 18px 20px;">Fungos; faltas; compressor sobrecarregado</td>
               <td style="padding: 18px 20px;">Cancelamento de matrículas; conta de luz alta</td>
-              <td style="padding: 18px 20px;">Selo “Eficiência Energética”; troca parcelada</td>
+              <!-- CONTEÚDO REVISADO DA COLUNA -->
+              <td style="padding: 18px 20px;">Selo físico visível de "Eficiência Energética" e QR Code comprovando a higienização química contínua.</td>
               <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Mapeia o desgaste severo dos motores ajudando a diluir compras no caixa.</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 6.000 – R$ 18.000</td>
             </tr>
@@ -498,7 +508,8 @@
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Escolas</td>
               <td style="padding: 18px 20px;">Calor; faltas; multa da Vigilância; piso molhado</td>
               <td style="padding: 18px 20px;">Baixo rendimento; pais insatisfeitos</td>
-              <td style="padding: 18px 20px;">QR Code fiscalizável; troca nas férias</td>
+              <!-- CONTEÚDO REVISADO DA COLUNA -->
+              <td style="padding: 18px 20px;">Rastreamento do PMOC via nuvem com acesso público e rápido para inspeções sanitárias imediatas.</td>
               <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Direciona a compra de novos ativos estritamente para o recesso (Jan/Jul).</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 8.000 – R$ 25.000</td>
             </tr>
@@ -506,7 +517,8 @@
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Clubes</td>
               <td style="padding: 18px 20px;">Eventos cancelados; subdimensionamento; curto-circuito</td>
               <td style="padding: 18px 20px;">Perda de casamentos e eventos de alto ticket</td>
-              <td style="padding: 18px 20px;">Laudo de dimensionamento; selo “Ambiente Certificado”</td>
+              <!-- CONTEÚDO REVISADO DA COLUNA -->
+              <td style="padding: 18px 20px;">Histórico de medição de corrente elétrica e testes de isolamento de compressores de grande porte.</td>
               <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Relatórios de vida útil claros para fácil aprovação de verba com o Conselho.</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 20.000 – R$ 60.000</td>
             </tr>
@@ -516,6 +528,7 @@
     </div>
   </section>
 
+  <!-- SEÇÃO 7: CONTATO -->
   <section class="section-padding bg-dark" id="contato">
     <div class="container">
       <div class="contato-layout">
@@ -534,6 +547,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <p style="font-size: 14px; color: var(--text-gray); margin-bottom: 0;">
