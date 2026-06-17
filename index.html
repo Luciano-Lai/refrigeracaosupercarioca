@@ -46,7 +46,7 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      flex-shrink: 0; /* Impede a logo de amassar ou espremer o menu */
+      flex-shrink: 0;
     }
     .logo-img {
       height: 60px;
@@ -57,7 +57,7 @@
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: 18px; /* Espaçamento otimizado */
+      gap: 18px;
     }
 
     .nav-menu a {
@@ -67,7 +67,7 @@
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      white-space: nowrap; /* Evita quebra de palavras para duas linhas no desktop */
+      white-space: nowrap;
       transition: color 0.2s;
     }
     .nav-menu a:hover {
@@ -334,7 +334,7 @@
     <div class="container">
       <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
         <h2>Selo Super Carioca</h2>
-        <p>Fixado diretamente nos seus equipamentos, o selo utiliza tecnologia para transformar a manutenção preventiva em uma ferramenta de gestão activa para a sua diretoria.</p>
+        <p>Fixado diretamente nos seus equipamentos, o selo utiliza tecnologia para transformar a manutenção preventiva em uma ferramenta de gestão ativa para a sua diretoria.</p>
       </div>
 
       <div class="grid-selo">
@@ -470,7 +470,6 @@
               <th style="padding: 18px 20px; font-weight: 600;">Segmento</th>
               <th style="padding: 18px 20px; font-weight: 600;">Riscos Maiores (sem manutenção)</th>
               <th style="padding: 18px 20px; font-weight: 600;">Perda de Oportunidade</th>
-              <!-- NOME DO CABEÇALHO ATUALIZADO COERENTE COM A MARCA -->
               <th style="padding: 18px 20px; font-weight: 600; color: #38bdf8;">Selo Super Carioca</th>
               <th style="padding: 18px 20px; font-weight: 600; color: var(--accent-blue);">Ganho em Gestão de Ativos & Caixa</th>
               <th style="padding: 18px 20px; font-weight: 600; background-color: #122844;">Economia por ano</th>
@@ -479,47 +478,42 @@
           <tbody style="color: var(--text-gray); line-height: 1.5;">
             <tr style="border-bottom: 1px solid #e2e8f0;">
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Escritórios</td>
-              <td style="padding: 18px 20px;">Salas sem janelas param; absenteísmo; conta +20%</td>
-              <td style="padding: 18px 20px;">Queda de produtividade; sem planejamento de troca</td>
-              <!-- CONTEÚDO REVISADO DA COLUNA -->
-              <td style="padding: 18px 20px;">QR Code monitora a exaustão de CO₂ e ativa alertas automáticos de troca de filtros a cada 90 dias.</td>
-              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Mapeia o desgaste de Chillers para evitar que salas parem em dias úteis.</td>
+              <td style="padding: 18px 20px;">Clima instável em salas; rinite na equipe; ar parado sem renovação de oxigênio.</td>
+              <td style="padding: 18px 20px;">Queda drástica na produtividade; aumento de absenteísmo; quebras no meio do expediente.</td>
+              <td style="padding: 18px 20px;">Histórico em nuvem e QR Code monitorando o estado real dos filtros e a renovação de ar exigida por lei.</td>
+              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Relatórios preditivos que evitam paragens inesperadas e surpresas no orçamento em dias úteis.</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 8.000 – R$ 25.000</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Hotéis</td>
-              <td style="padding: 18px 20px;">Mofo; reclamações no Booking; vírus; incêndio</td>
-              <td style="padding: 18px 20px;">10 diárias perdidas por quarto; avaliações negativas</td>
-              <!-- CONTEÚDO REVISADO DA COLUNA -->
-              <td style="padding: 18px 20px;">Laudos e histórico técnico digitalizados por quarto, rastreando dreno e serpentina para auditorias ágeis.</td>
-              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Substituição preditiva de evaporadoras eliminando surpresas na alta temporada.</td>
+              <td style="padding: 18px 20px;">Mofo e biofilme; odores; contaminação cruzada de vírus trazidos pelo fluxo global de hóspedes.</td>
+              <td style="padding: 18px 20px;">Críticas severas de higiene no Booking; perda de credibilidade com estrangeiros; quartos interditados.</td>
+              <td style="padding: 18px 20px;">Plano de higienização rastreável por quarto via QR Code, garantindo a eliminação de patógenos importados.</td>
+              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Chancela de "Ambiente Seguro" que gera valor à marca e planejamento de paradas na baixa temporada.</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 30.000 – R$ 150.000</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Academias</td>
-              <td style="padding: 18px 20px;">Fungos; faltas; compressor sobrecarregado</td>
-              <td style="padding: 18px 20px;">Cancelamento de matrículas; conta de luz alta</td>
-              <!-- CONTEÚDO REVISADO DA COLUNA -->
-              <td style="padding: 18px 20px;">Selo físico visível de "Eficiência Energética" e QR Code comprovando a higienização química contínua.</td>
-              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Mapeia o desgaste severo dos motores ajudando a diluir compras no caixa.</td>
+              <td style="padding: 18px 20px;">Proliferação de fungos pelo suor; ar deitando água na musculação; ambiente abafado nos picos.</td>
+              <td style="padding: 18px 20px;">Alunos migrando para a concorrência por falta de conforto; multas pesadas da Vigilância sem PMOC.</td>
+              <td style="padding: 18px 20px;">Selo físico visível como argumento de marketing ("Ambiente Higienizado") e QR Code com histórico químico.</td>
+              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Monitoramento da corrente elétrica para detectar sobrecarga nos motores, reduzindo a conta de luz.</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 6.000 – R$ 18.000</td>
             </tr>
             <tr style="border-bottom: 1px solid #e2e8f0;">
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Escolas</td>
-              <td style="padding: 18px 20px;">Calor; faltas; multa da Vigilância; piso molhado</td>
-              <td style="padding: 18px 20px;">Baixo rendimento; pais insatisfeitos</td>
-              <!-- CONTEÚDO REVISADO DA COLUNA -->
-              <td style="padding: 18px 20px;">Rastreamento do PMOC via nuvem com acesso público e rápido para inspeções sanitárias imediatas.</td>
-              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Direciona a compra de novos ativos estritamente para o recesso (Jan/Jul).</td>
+              <td style="padding: 18px 20px;">Disseminação rápida de viroses; salas sobreaquecidas; pingas em computadores e secretárias.</td>
+              <td style="padding: 18px 20px;">Reclamações dos encarregados de educação; suspensão de aulas; processos e sanções legais.</td>
+              <td style="padding: 18px 20px;">Laudos técnicos assinados e plano PMOC 100% digitalizado no QR Code para fiscalizações imediatas.</td>
+              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Planeamento financeiro que direciona as grandes reparações e trocas estritamente para as férias (Jan/Jul).</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 8.000 – R$ 25.000</td>
             </tr>
             <tr>
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Clubes</td>
-              <td style="padding: 18px 20px;">Eventos cancelados; subdimensionamento; curto-circuito</td>
-              <td style="padding: 18px 20px;">Perda de casamentos e eventos de alto ticket</td>
-              <!-- CONTEÚDO REVISADO DA COLUNA -->
-              <td style="padding: 18px 20px;">Histórico de medição de corrente elétrica e testes de isolamento de compressores de grande porte.</td>
-              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Relatórios de vida útil claros para fácil aprovação de verba com o Conselho.</td>
+              <td style="padding: 18px 20px;">Falha técnica no salão de festas; aparelhos antigos sem histórico; subdimensionamento térmico.</td>
+              <td style="padding: 18px 20px;">Cancelamento ou pedidos de indenização em casamentos e grandes eventos corporativos contratados.</td>
+              <td style="padding: 18px 20px;">Rastreamento completo de vida útil e medição de isolamento de compressores pesados (Piso-Teto/Chiller).</td>
+              <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Relatórios técnicos claros e detalhados para aprovação facilitada de verbas junto ao Conselho do Clube.</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 20.000 – R$ 60.000</td>
             </tr>
           </tbody>
