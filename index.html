@@ -167,6 +167,13 @@
       gap: 50px; 
       align-items: center; 
     }
+    .selo-left-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      width: 100%;
+    }
     .selo-left-image {
       width: 100%;
       max-width: 480px;
@@ -220,8 +227,8 @@
     .step-card p { font-size: 14.5px; margin-bottom: 0; line-height: 1.6; }
 
     /* BOTOES E CONVERSÃO */
-    .contato-layout { display: grid; grid-template-columns: 1fr; text-align: center; max-width: 700px; margin: 0 auto; }
-    .action-group { display: flex; justify-content: center; gap: 15px; margin-top: 30px; flex-wrap: wrap; }
+    .contato-layout { display: flex; flex-direction: column; text-align: center; max-width: 850px; margin: 0 auto; align-items: center; }
+    .action-group { display: flex; justify-content: center; gap: 15px; margin-top: 30px; flex-wrap: wrap; width: 100%; }
 
     .btn-action {
       display: inline-flex; 
@@ -251,7 +258,7 @@
     }
 
     @media (max-width: 1024px) {
-      .grid-selo { grid-template-columns: 1fr !important; gap: 30px; }
+      .grid-selo { grid-template-columns: 1fr !important; gap: 40px; }
       .riscos-grid, .grid-4 { grid-template-columns: 1fr !important; gap: 25px; }
       
       .hero { padding: 20px 0 50px 0; }
@@ -337,7 +344,7 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 3: O PROGRAMA AR VERIFICADO (UNIFICADA E CORRIGIDA) -->
+  <!-- SEÇÃO 3: O PROGRAMA AR VERIFICADO -->
   <section class="section-padding" id="programa" style="background: #ffffff;">
     <div class="container">
       
@@ -346,14 +353,15 @@
         <img src="ar verificado logo.png" alt="Logotipo Oficial Ar Verificado" style="max-width: 280px; height: auto; display: block; margin: 0 auto 15px;">
         <h3 style="font-size: 22px; font-weight: 700; color: var(--primary-navy); margin-bottom: 20px;">Confiança se verifica.</h3>
         <p style="font-size: 17px; color: var(--text-gray); max-width: 650px; margin: 0 auto; line-height: 1.6;">
-          Nosso programa de transparência e rastreabilidade para sistemas de climatização utiliza tecnologia em nuvem para transformar a manutenção preventiva em uma ferramenta de governança e gestão ativa.
+          Nosso programa de transparência e rastreabilidade para sistemas de climatização utiliza tecnologia em nuvem para transformar a manutenção preventiva em uma ferramenta de governança e gestão activa.
         </p>
       </div>
 
-      <!-- Grid com a foto do Selo no Balcão e os Benefícios -->
+      <!-- Grid com Imagens Empilhadas na Esquerda e Benefícios na Direita -->
       <div class="grid-selo">
-        <div>
+        <div class="selo-left-container">
           <img src="Selo Ar Verificado Balcão.png" alt="Selo Oficial do Programa Ar Verificado no Balcão" class="selo-left-image">
+          <img src="SeloSuperCarioca.png" alt="Selo de Qualidade Super Carioca" class="selo-left-image">
         </div>
         <div class="box-right-card">
           <ul style="list-style: none; font-size: 15px; color: var(--text-gray);">
@@ -523,7 +531,7 @@
               <td style="padding: 18px 20px; font-weight: 500; color: var(--primary-navy);">Planeamento financeiro que direciona as grandes reparações e trocas estritamente para as férias (Jan/Jul).</td>
               <td style="padding: 18px 20px; font-weight: 700; color: #16a34a; background: #f0fdf4;">R$ 8.000 – R$ 25.000</td>
             </tr>
-            <tr>
+            <tr style="border-bottom: 1px solid #cbd5e1;">
               <td style="padding: 18px 20px; font-weight: 700; color: var(--primary-navy); background: #f8fafc;">Clubes</td>
               <td style="padding: 18px 20px;">Falha técnica no salão de festas; aparelhos antigos sem histórico; subdimensionamento térmico.</td>
               <td style="padding: 18px 20px;">Cancelamento ou pedidos de indenização em casamentos e grandes eventos corporativos contratados.</td>
@@ -537,10 +545,13 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 7: CONTATO -->
+  <!-- SEÇÃO 7: CONTATO (ATUALIZADA COM LOGO AR VERIFICADO) -->
   <section class="section-padding bg-dark" id="contato">
     <div class="container">
       <div class="contato-layout">
+        <!-- Logo do Programa adicionado de forma integrada -->
+        <img src="ar verificado logo.png" alt="Programa Ar Verificado" style="max-width: 220px; height: auto; display: block; margin-bottom: 25px;">
+        
         <h2 style="color: white; margin-bottom: 15px;">Deseja implantar o Programa Ar Verificado no seu sistema de refrigeração?</h2>
         <p style="margin-bottom: 5px; font-size: 18px; color: #cbd5e1;">
           Entre em contato com o time técnico da Refrigeração Super Carioca para mapear a sua estrutura.
