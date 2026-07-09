@@ -105,28 +105,52 @@
     }
     .bg-slate { background-color: var(--slate-bg); }
 
-    /* BLOCO 4 - QUEM PARTICIPA */
+    /* BLOCO 4 - QUEM PARTICIPA (CARDS SOFISTICADOS COM IMAGENS PNG ATUALIZADAS) */
     .participantes-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 25px;
       margin-top: 50px;
     }
-    .participante-item {
+    .participante-card {
       background: white;
       border: 1px solid #e2e8f0;
-      padding: 25px;
-      border-radius: 6px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-photo-wrapper {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background-color: #edf2f7;
+    }
+    .card-photo {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+    .card-title {
+      padding: 15px 10px;
       font-weight: 700;
       font-size: 16px;
       color: var(--primary-navy);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.01);
+      text-align: center;
+      border-top: 1px solid #e2e8f0;
+      background: #ffffff;
     }
-    .participante-item span { font-size: 32px; }
+    .participante-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(11, 30, 54, 0.1);
+    }
+    .participante-card:hover .card-photo {
+      transform: scale(1.05);
+    }
 
     /* BLOCO 5 - PERGUNTAS FREQUENTES */
     .faq-wrapper { max-width: 800px; margin: 50px auto 0 auto; text-align: left; }
@@ -149,12 +173,12 @@
       .participantes-grid { grid-template-columns: 1fr; }
       .section-padding { padding: 70px 0; }
       .hero-logo-img { max-width: 220px; }
+      .card-photo-wrapper { height: 150px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- BLOCO 1 — HERO -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -166,14 +190,13 @@
     </div>
   </section>
 
-  <!-- BLOCO 2 — O QUE É E POR QUE O AR VERIFICADO EXISTE? -->
   <section class="section-padding">
     <div class="container">
       <div class="grid-conceito">
         <div>
           <h2>O ar que você respira também merece transparência.</h2>
           
-          <p>Todos os dias, millions de pessoas permanecem por horas em ambientes climatizados, como hotéis, clínicas, escolas, academias, supermercados e escritórios. Embora esses sistemas sejam essenciais para o conforto e o bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
+          <p>Todos os dias, milhões de pessoas permanecem por horas em ambientes climatizados, como hotéis, clínicas, escolas, academias, supermercados e escritórios. Embora esses sistemas sejam essenciais para o conforto e o bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
           
           <p style="margin-top: 25px; margin-bottom: 25px; font-weight: 600; color: var(--primary-navy); font-size: 18px;">
             O AR VERIFICADO® foi criado para tornar essas informações acessíveis de forma simples, organizada e verificável.
@@ -182,13 +205,12 @@
           <p>É um programa de transparência que identifica equipamentos participantes por meio de um selo exclusivo conectado a um <strong>Registro Digital Oficial</strong>, acessível por QR Code. Assim, qualquer pessoa pode consultar informações verificáveis sobre o histórico de manutenção daquele equipamento.</p>
         </div>
         <div>
-          <img src="Selo Ar Verificado.png" alt="Selo Oficial Ar Verificado" class="selo-arv-img">
+          <img src="Selo Ar Verificado Balcão.png" alt="Selo Oficial Ar Verificado no Balcão" class="selo-arv-img">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BLOCO 3 — COMO FUNCIONA (INFOGRÁFICO DE ALTO IMPACTO) -->
   <section class="section-padding bg-slate" id="como-funciona">
     <div class="container text-center">
       <h2>Simples para consultar. Transparente para confiar.</h2>
@@ -199,25 +221,72 @@
     </div>
   </section>
 
-  <!-- BLOCO 4 — QUEM PARTICIPA (CONECTADO LOGO APÓS O FLUXO) -->
   <section class="section-padding">
     <div class="container text-center">
       <h2>Desenvolvido para organizações que valorizam transparência.</h2>
       
       <div class="participantes-grid">
-        <div class="participante-item"><span>🏨</span> Hotéis</div>
-        <div class="participante-item"><span>🏥</span> Clínicas</div>
-        <div class="participante-item"><span>🏫</span> Escolas</div>
-        <div class="participante-item"><span>🏋</span> Academias</div>
-        <div class="participante-item"><span>🍽</span> Restaurantes</div>
-        <div class="participante-item"><span>🛒</span> Supermercados</div>
-        <div class="participante-item"><span>🏟</span> Clubes</div>
-        <div class="participante-item"><span>🏢</span> Empresas</div>
+        
+        <div class="participante-card">
+          <div class="card-photo-wrapper">
+            <div class="card-photo" style="background-image: url('Hotel.png');"></div>
+          </div>
+          <div class="card-title">Hotéis</div>
+        </div>
+
+        <div class="participante-card">
+          <div class="card-photo-wrapper">
+            <div class="card-photo" style="background-image: url('Clínica.png');"></div>
+          </div>
+          <div class="card-title">Clínicas</div>
+        </div>
+
+        <div class="participante-card">
+          <div class="card-photo-wrapper">
+            <div class="card-photo" style="background-image: url('Escola.png');"></div>
+          </div>
+          <div class="card-title">Escolas</div>
+        </div>
+
+        <div class="participante-card">
+          <div class="card-photo-wrapper">
+            <div class="card-photo" style="background-image: url('Academia.png');"></div>
+          </div>
+          <div class="card-title">Academias</div>
+        </div>
+
+        <div class="participante-card">
+          <div class="card-photo-wrapper">
+            <div class="card-photo" style="background-image: url('Restaurante.png');"></div>
+          </div>
+          <div class="card-title">Restaurantes</div>
+        </div>
+
+        <div class="participante-card">
+          <div class="card-photo-wrapper">
+            <div class="card-photo" style="background-image: url('Farmácia.png');"></div>
+          </div>
+          <div class="card-title">Farmácias</div>
+        </div>
+
+        <div class="participante-card">
+          <div class="card-photo-wrapper">
+            <div class="card-photo" style="background-image: url('Clube.png');"></div>
+          </div>
+          <div class="card-title">Clubes</div>
+        </div>
+
+        <div class="participante-card">
+          <div class="card-photo-wrapper">
+            <div class="card-photo" style="background-image: url('Escritório.png');"></div>
+          </div>
+          <div class="card-title">Escritórios</div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- BLOCO 5 — PERGUNTAS FREQUENTES -->
   <section class="section-padding bg-slate">
     <div class="container text-center">
       <h2>Perguntas frequentes</h2>
@@ -246,7 +315,6 @@
     </div>
   </section>
 
-  <!-- BLOCO 6 — RODAPÉ -->
   <footer class="text-center">
     <div class="container">
       <img src="SuperCarioca.png" alt="Refrigeração Super Carioca" class="footer-logo-sc">
