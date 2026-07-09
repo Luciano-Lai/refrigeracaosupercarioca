@@ -26,6 +26,14 @@
       line-height: 1.6;
     }
 
+    /* Solução para o símbolo ® elegante e proporcional */
+    sup {
+      font-size: 0.55em;
+      font-weight: 400;
+      margin-left: 2px;
+      vertical-align: super;
+    }
+
     .container { max-width: 1100px; margin: 0 auto; padding: 0 30px; }
     .section-padding { padding: 100px 0; }
     .text-center { text-align: center; }
@@ -163,7 +171,7 @@
       border: 1px solid #e2e8f0;
       border-radius: 8px;
       margin-bottom: 16px;
-      box-shadow: 0 4px 12px rgba(11, 30, 54, 0.02);
+      box-shadow: 0 4px 12 rgba(11, 30, 54, 0.02);
       transition: box-shadow 0.2s ease;
     }
     .faq-accordion:hover {
@@ -230,7 +238,6 @@
 </head>
 <body>
 
-  <!-- BLOCO 1 — HERO -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -242,17 +249,16 @@
     </div>
   </section>
 
-  <!-- BLOCO 2 — O QUE É E POR QUE O AR VERIFICADO EXISTE? -->
   <section class="section-padding">
     <div class="container">
       <div class="grid-conceito">
         <div>
           <h2>O ar que você respira também merece transparência.</h2>
           
-          <p>Todos os dias, milhões de pessoas permanecem por hours em ambientes climatizados, como hotéis, clínicas, escolas, academias, farmácias e escritórios. Embora esses sistemas sejam essenciais para o conforto e o bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
+          <p>Todos os dias, milhões de pessoas permanecem por horas em ambientes climatizados, como hotéis, clínicas, escolas, academias, farmácias e escritórios. Embora esses sistemas sejam essenciais para o conforto e o bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
           
           <p style="margin-top: 25px; margin-bottom: 25px; font-weight: 600; color: var(--primary-navy); font-size: 18px;">
-            O AR VERIFICADO® foi criado para tornar essas informações acessíveis de forma simples, organizada e verificável.
+            O AR VERIFICADO<sup>®</sup> foi criado para tornar essas informações acessíveis de forma simples, organizada e verificável.
           </p>
           
           <p>É um programa de transparência que identifica equipamentos participantes por meio de um selo exclusivo conectado a um <strong>Registro Digital Oficial</strong>, acessível por QR Code. Assim, qualquer pessoa pode consultar informações verificáveis sobre o histórico de manutenção daquele equipamento.</p>
@@ -264,7 +270,6 @@
     </div>
   </section>
 
-  <!-- BLOCO 3 — COMO FUNCIONA -->
   <section class="section-padding bg-slate" id="como-funciona">
     <div class="container text-center">
       <h2>Simples para consultar. Transparente para confiar.</h2>
@@ -275,14 +280,12 @@
     </div>
   </section>
 
-  <!-- BLOCO 4 — ONDE O AR VERIFICADO PODE SER APLICADO -->
   <section class="section-padding">
     <div class="container text-center">
       <h2>Desenvolvido para organizações que valorizam transparência.</h2>
       
       <div class="participantes-grid">
         
-        <!-- CARD HOTEL -->
         <div class="participante-card">
           <div class="card-photo-wrapper">
             <div class="card-photo" style="background-image: url('Hotel.png');"></div>
@@ -290,7 +293,6 @@
           <div class="card-title">Hotéis</div>
         </div>
 
-        <!-- CARD CLÍNICA -->
         <div class="participante-card">
           <div class="card-photo-wrapper">
             <div class="card-photo" style="background-image: url('Clínica.png');"></div>
@@ -298,7 +300,6 @@
           <div class="card-title">Clínicas</div>
         </div>
 
-        <!-- CARD ESCOLA -->
         <div class="participante-card">
           <div class="card-photo-wrapper">
             <div class="card-photo" style="background-image: url('Escola.png');"></div>
@@ -306,7 +307,6 @@
           <div class="card-title">Escolas</div>
         </div>
 
-        <!-- CARD ACADEMIA -->
         <div class="participante-card">
           <div class="card-photo-wrapper">
             <div class="card-photo" style="background-image: url('Academia.png');"></div>
@@ -314,7 +314,6 @@
           <div class="card-title">Academias</div>
         </div>
 
-        <!-- CARD RESTAURANTE -->
         <div class="participante-card">
           <div class="card-photo-wrapper">
             <div class="card-photo" style="background-image: url('Restaurante.png');"></div>
@@ -322,7 +321,6 @@
           <div class="card-title">Restaurantes</div>
         </div>
 
-        <!-- CARD FARMÁCIA -->
         <div class="participante-card">
           <div class="card-photo-wrapper">
             <div class="card-photo" style="background-image: url('Farmácia.png');"></div>
@@ -330,7 +328,6 @@
           <div class="card-title">Farmácias</div>
         </div>
 
-        <!-- CARD CLUBES -->
         <div class="participante-card">
           <div class="card-photo-wrapper">
             <div class="card-photo" style="background-image: url('Clube.png');"></div>
@@ -338,7 +335,6 @@
           <div class="card-title">Clubes</div>
         </div>
 
-        <!-- CARD ESCRITÓRIO -->
         <div class="participante-card">
           <div class="card-photo-wrapper">
             <div class="card-photo" style="background-image: url('Escritório.png');"></div>
@@ -350,38 +346,33 @@
     </div>
   </section>
 
-  <!-- BLOCO 5 — PERGUNTAS FREQUENTES -->
   <section class="section-padding bg-slate">
     <div class="container text-center">
       <h2>💬 Perguntas Frequentes</h2>
       
       <div class="faq-wrapper">
         
-        <!-- PERGUNTA 1 -->
         <details class="faq-accordion">
-          <summary>O AR VERIFICADO® substitui o PMOC?</summary>
+          <summary>O AR VERIFICADO<sup>®</sup> substitui o PMOC?</summary>
           <div class="faq-content">
             <p>Não. O programa complementa a gestão da climatização ao oferecer transparência e rastreabilidade dos registros dos equipamentos participantes.</p>
           </div>
         </details>
 
-        <!-- PERGUNTA 2 -->
         <details class="faq-accordion">
-          <summary>O que o AR VERIFICADO® certifica?</summary>
+          <summary>O que o AR VERIFICADO<sup>®</sup> certifica?</summary>
           <div class="faq-content">
             <p>O programa certifica que existe um Registro Digital Oficial do equipamento e que suas informações podem ser consultadas publicamente. Ele promove transparência sobre a gestão da climatização, sem substituir inspeções técnicas ou obrigações legais.</p>
           </div>
         </details>
 
-        <!-- PERGUNTA 3 -->
         <details class="faq-accordion">
-          <summary>Quem é responsável pelo AR VERIFICADO®?</summary>
+          <summary>Quem é responsável pelo AR VERIFICADO<sup>®</sup>?</summary>
           <div class="faq-content">
             <p>O programa foi desenvolvido e é administrado pela Refrigeração Super Carioca, responsável pelos critérios de emissão, rastreabilidade e manutenção do Registro Digital Oficial.</p>
           </div>
         </details>
 
-        <!-- PERGUNTA 4 -->
         <details class="faq-accordion">
           <summary>Quem pode acessar as informações?</summary>
           <div class="faq-content">
@@ -389,7 +380,6 @@
           </div>
         </details>
 
-        <!-- PERGUNTA 5 -->
         <details class="faq-accordion">
           <summary>O QR Code pode ser alterado?</summary>
           <div class="faq-content">
@@ -397,11 +387,10 @@
           </div>
         </details>
 
-        <!-- PERGUNTA 6 -->
         <details class="faq-accordion">
           <summary>O que acontece quando um equipamento recebe manutenção?</summary>
           <div class="faq-content">
-            <p>O histórico do equipamento é updated no Registro Digital Oficial, mantendo a rastreabilidade das intervenções realizadas.</p>
+            <p>O histórico do equipamento é atualizado no Registro Digital Oficial, mantendo a rastreabilidade das intervenções realizadas.</p>
           </div>
         </details>
 
@@ -409,7 +398,6 @@
     </div>
   </section>
 
-  <!-- BLOCO 6 — RODAPÉ -->
   <footer class="text-center">
     <div class="container">
       <img src="SuperCarioca.png" alt="Refrigeração Super Carioca" class="footer-logo-sc">
