@@ -33,14 +33,13 @@
     h2 { font-size: 36px; font-weight: 800; color: var(--primary-navy); line-height: 1.2; margin-bottom: 25px; }
     p { font-size: 16.5px; color: var(--text-muted); margin-bottom: 20px; }
 
-    /* BLOCO 1 - HERO (Atualizado com a sua imagem estática local) */
+    /* BLOCO 1 - HERO (Com imagem estática local e filtro de contraste azul) */
     .hero {
       position: relative;
       min-height: 85vh;
       display: flex;
       align-items: center;
       color: white;
-      /* Camada de escurecimento linear combinada com o seu arquivo estático de fundo */
       background: linear-gradient(rgba(11, 30, 54, 0.8), rgba(11, 30, 54, 0.8)), url('ar verificado hero.png') no-repeat center center/cover;
       padding: 60px 0;
     }
@@ -67,8 +66,7 @@
     }
     .btn-action:hover { transform: translateY(-2px); background: #e07e12; box-shadow: 0 6px 20px rgba(244, 139, 23, 0.4); }
 
-    /* BLOCO 2 & 3 - CONCEITO */
-    .bg-slate { background-color: var(--slate-bg); }
+    /* BLOCO DE CONCEITO UNIFICADO */
     .block-max-width { max-width: 750px; margin: 0 auto; }
 
     /* BLOCO 4 - FLUXO VISUAL */
@@ -139,7 +137,7 @@
     }
     .participante-item span { font-size: 32px; }
 
-    /* BLOCO 7 - FAQ ATÍPICO */
+    /* BLOCO 7 - PERGUNTAS FREQUENTES AGRESSIVO */
     .faq-wrapper { max-width: 800px; margin: 50px auto 0 auto; text-align: left; }
     .faq-item { margin-bottom: 40px; border-bottom: 1px solid #e2e8f0; padding-bottom: 30px; }
     .faq-item:last-child { border-bottom: none; }
@@ -181,21 +179,18 @@
   <section class="section-padding">
     <div class="container text-center block-max-width">
       <h2>O ar que você respira também merece transparência.</h2>
-      <p>Todos os dias, milhões de pessoas permanecem por horas em ambientes climatizados, como hotéis, clínicas, escolas, academias, supermercados e escritórios.</p>
-      <p>Embora esses sistemas sejam essenciais para o conforto e bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
-      <p style="margin-bottom: 0; font-weight: 600; color: var(--primary-navy);">O AR VERIFICADO® nasceu para tornar essas informações acessíveis de forma simples, organizada e verificável.</p>
+      
+      <p>Todos os dias, milhões de pessoas permanecem por hours em ambientes climatizados, como hotéis, clínicas, escolas, academias, supermercados e escritórios. Embora esses sistemas sejam essenciais para o conforto e bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
+      
+      <p style="margin-top: 25px; margin-bottom: 25px; font-weight: 600; color: var(--primary-navy); font-size: 18px;">
+        O AR VERIFICADO® nasceu para tornar essas informações acessíveis de forma simples, organizada e verificável.
+      </p>
+      
+      <p>Este é um programa de transparência que identifica equipamentos participantes por meio de um selo exclusivo e de um Registro Digital Oficial acessível por QR Code. Assim, qualquer pessoa pode consultar informações verificáveis sobre o histórico de manutenção daquele ambiente.</p>
     </div>
   </section>
 
-  <section class="section-padding bg-slate">
-    <div class="container text-center block-max-width">
-      <h2>Um programa de transparência para sistemas de climatização.</h2>
-      <p>O AR VERIFICADO® é um programa que identifica equipamentos participantes por meio de um selo exclusivo e de um Registro Digital Oficial acessível por QR Code.</p>
-      <p style="margin-bottom: 0;">Assim, qualquer pessoa pode consultar informações verificáveis sobre o histórico de manutenção daquele equipamento.</p>
-    </div>
-  </section>
-
-  <section class="section-padding" id="como-funciona">
+  <section class="section-padding bg-slate" id="como-funciona">
     <div class="container text-center">
       <h2>Simples para consultar. Transparente para confiar.</h2>
       
@@ -213,21 +208,21 @@
     </div>
   </section>
 
-  <section class="section-padding bg-slate">
+  <section class="section-padding">
     <div class="container text-center">
       <h2>Informações disponíveis</h2>
       
       <div class="cards-grid">
         <div class="card-info">✔ Histórico de manutenção</div>
         <div class="card-info">✔ Inspeções realizadas</div>
-        <div class="card-info">✔ Datas das interventions</div>
+        <div class="card-info">✔ Datas das intervenções</div>
         <div class="card-info">✔ Responsável técnico</div>
         <div class="card-info">✔ Registro Digital Oficial</div>
       </div>
     </div>
   </section>
 
-  <section class="section-padding">
+  <section class="section-padding bg-slate">
     <div class="container text-center">
       <h2>Desenvolvido para organizações que valorizam transparência.</h2>
       
@@ -244,7 +239,7 @@
     </div>
   </section>
 
-  <section class="section-padding bg-slate">
+  <section class="section-padding">
     <div class="container text-center">
       <h2>Perguntas frequentes</h2>
       
@@ -275,7 +270,7 @@
   <footer class="text-center">
     <div class="container">
       <img src="SuperCarioca.png" alt="Refrigeração Super Carioca" class="footer-logo-sc">
-      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 0;">
+      <p style="font-size: 13px; color: var(--text-muted); margin-top: 5px; margin-bottom: 0;">
         Programa desenvolvido pela Refrigeração Super Carioca.
       </p>
     </div>
