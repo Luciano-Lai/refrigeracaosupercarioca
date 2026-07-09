@@ -217,6 +217,43 @@
       line-height: 1.7;
     }
 
+    /* NOVO BLOCO - CTA DE DIRECIONAMENTO PARA O HOME */
+    .cta-home {
+      background-color: var(--primary-navy);
+      color: #ffffff;
+      padding: 80px 0;
+    }
+    .cta-home h2 {
+      color: #ffffff;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+    .cta-home p {
+      color: #cbd5e1;
+      max-width: 600px;
+      margin: 0 auto 35px auto;
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 35px;
+      color: var(--primary-navy);
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      border-radius: 4px;
+      background: #ffffff;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease;
+    }
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      background: #f1f5f9;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
     /* BLOCO 6 - RODAPÉ */
     footer { padding: 60px 0; background: white; border-top: 1px solid #e2e8f0; }
     .footer-logo-sc { height: 45px; width: auto; margin-bottom: 15px; }
@@ -234,6 +271,7 @@
       .card-photo-wrapper { height: 150px; }
       .faq-accordion summary { font-size: 16px; padding: 20px; }
       .faq-content { padding: 0 20px 20px 20px; }
+      .cta-home h2 { font-size: 26px; }
     }
   </style>
 </head>
@@ -370,7 +408,7 @@
         <details class="faq-accordion">
           <summary><span>Quem é responsável pelo AR VERIFICADO<sup>®</sup>?</span></summary>
           <div class="faq-content">
-            <p>O programa foi desenvolvido e é administrado pela Refrigeração Super Carioca, responsible pelos critérios de emissão, rastreabilidade e manutenção do Registro Digital Oficial.</p>
+            <p>O programa foi desenvolvido e é administrado pela Refrigeração Super Carioca, responsável pelos critérios de emissão, rastreabilidade e manutenção do Registro Digital Oficial.</p>
           </div>
         </details>
 
@@ -391,11 +429,19 @@
         <details class="faq-accordion">
           <summary><span>O que acontece quando um equipamento recebe manutenção?</span></summary>
           <div class="faq-content">
-            <p>O histórico do equipamento é atualizado no Registro Digital Oficial, mantendo a rastreabilidade das intervenções realizadas.</p>
+            <p>O histórico do equipamento é atualizado no Registro Digital Oficial, mantendo a rastreabilidade das interventions realizadas.</p>
           </div>
         </details>
 
       </div>
+    </div>
+  </section>
+
+  <section class="cta-home text-center">
+    <div class="container">
+      <h2>Conheça a nossa história</h2>
+      <p>O AR VERIFICADO<sup>®</sup> é uma iniciativa desenvolvida pela Refrigeração Super Carioca, referência em soluções de climatização de alta performance.</p>
+      <a href="#" class="btn-secondary">Quero conhecer a Refrigeração Super Carioca</a>
     </div>
   </section>
 
