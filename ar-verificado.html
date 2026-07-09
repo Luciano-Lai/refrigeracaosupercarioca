@@ -45,7 +45,6 @@
     }
     .hero-content { max-width: 700px; }
     
-    /* Atualizado: Estilo para a imagem da logo do programa */
     .hero-logo-img {
       height: auto;
       max-width: 280px;
@@ -73,7 +72,7 @@
     }
     .btn-action:hover { transform: translateY(-2px); background: #e07e12; box-shadow: 0 6px 20px rgba(244, 139, 23, 0.4); }
 
-    /* BLOCO 2 — NOVO LAYOUT LADO A LADO */
+    /* BLOCO 2 — LAYOUT LADO A LADO */
     .grid-conceito {
       display: grid;
       grid-template-columns: 1.2fr 1fr;
@@ -91,33 +90,19 @@
       box-shadow: 0 10px 30px rgba(11, 30, 54, 0.06);
     }
 
-    /* BLOCO 4 - FLUXO VISUAL */
-    .fluxo-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 60px;
-      flex-wrap: wrap;
-      gap: 20px;
+    /* BLOCO 4 - FLUXO VISUAL (Atualizado para Imagem Responsiva) */
+    .fluxo-container {
+      margin-top: 50px;
+      width: 100%;
     }
-    .fluxo-step {
-      background: white;
-      border: 1px solid #e2e8f0;
-      padding: 25px 20px;
-      border-radius: 6px;
-      flex: 1;
-      min-width: 180px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-      font-weight: 700;
-      color: var(--primary-navy);
-      font-size: 15px;
+    .fluxo-img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
     }
-    .fluxo-step.highlight {
-      background: var(--primary-navy);
-      color: white;
-      border-color: var(--primary-navy);
-    }
-    .fluxo-arrow { font-size: 22px; color: var(--accent-blue); font-weight: bold; }
 
     /* BLOCO 5 - CARTÕES */
     .cards-grid {
@@ -175,8 +160,6 @@
       .grid-conceito { grid-template-columns: 1fr; text-align: center; gap: 40px; }
       .cards-grid { grid-template-columns: repeat(2, 1fr); }
       .participantes-grid { grid-template-columns: repeat(2, 1fr); }
-      .fluxo-wrapper { flex-direction: column; }
-      .fluxo-arrow { transform: rotate(90deg); margin: 5px 0; }
       .hero h1 { font-size: 36px; }
     }
     @media (max-width: 600px) {
@@ -189,6 +172,7 @@
 </head>
 <body>
 
+  <!-- BLOCO 1 — HERO -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -200,6 +184,7 @@
     </div>
   </section>
 
+  <!-- BLOCO 2 — O QUE É E POR QUE O AR VERIFICADO EXISTE? -->
   <section class="section-padding">
     <div class="container">
       <div class="grid-conceito">
@@ -221,24 +206,19 @@
     </div>
   </section>
 
+  <!-- BLOCO 4 — COMO FUNCIONA (ATUALIZADO COM O SEU INFOGRÁFICO) -->
   <section class="section-padding bg-slate" id="como-funciona">
     <div class="container text-center">
       <h2>Simples para consultar. Transparente para confiar.</h2>
       
-      <div class="fluxo-wrapper">
-        <div class="fluxo-step">Estabelecimento participante</div>
-        <div class="fluxo-arrow">→</div>
-        <div class="fluxo-step">Equipamentos identificados</div>
-        <div class="fluxo-arrow">→</div>
-        <div class="fluxo-step highlight">SELO ARV</div>
-        <div class="fluxo-arrow">→</div>
-        <div class="fluxo-step">Registro Digital Oficial</div>
-        <div class="fluxo-arrow">→</div>
-        <div class="fluxo-step">Consulta pública</div>
+      <div class="fluxo-container">
+        <!-- O infográfico substitui o antigo fluxo em texto -->
+        <img src="Ar Verificado Fluxo.png" alt="Como funciona o Ar Verificado" class="fluxo-img">
       </div>
     </div>
   </section>
 
+  <!-- BLOCO 5 — O QUE PODE SER CONSULTADO -->
   <section class="section-padding">
     <div class="container text-center">
       <h2>Informações disponíveis</h2>
@@ -253,6 +233,7 @@
     </div>
   </section>
 
+  <!-- BLOCO 6 — QUEM PARTICIPA -->
   <section class="section-padding bg-slate">
     <div class="container text-center">
       <h2>Desenvolvido para organizações que valorizam transparência.</h2>
@@ -270,6 +251,7 @@
     </div>
   </section>
 
+  <!-- BLOCO 7 — PERGUNTAS FREQUENTES -->
   <section class="section-padding">
     <div class="container text-center">
       <h2>Perguntas frequentes</h2>
@@ -298,6 +280,7 @@
     </div>
   </section>
 
+  <!-- BLOCO 8 — RODAPÉ -->
   <footer class="text-center">
     <div class="container">
       <img src="SuperCarioca.png" alt="Refrigeração Super Carioca" class="footer-logo-sc">
