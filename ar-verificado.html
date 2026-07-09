@@ -33,7 +33,7 @@
     h2 { font-size: 36px; font-weight: 800; color: var(--primary-navy); line-height: 1.2; margin-bottom: 25px; }
     p { font-size: 16.5px; color: var(--text-muted); margin-bottom: 20px; }
 
-    /* BLOCO 1 - HERO (Com imagem estática local e filtro de contraste azul) */
+    /* BLOCO 1 - HERO */
     .hero {
       position: relative;
       min-height: 85vh;
@@ -44,8 +44,15 @@
       padding: 60px 0;
     }
     .hero-content { max-width: 700px; }
-    .logo-arv { font-size: 28px; font-weight: 800; letter-spacing: 1px; color: #ffffff; margin-bottom: 30px; display: inline-block; }
-    .logo-arv span { color: var(--accent-blue); }
+    
+    /* Atualizado: Estilo para a imagem da logo do programa */
+    .hero-logo-img {
+      height: auto;
+      max-width: 280px;
+      display: block;
+      margin-bottom: 30px;
+    }
+
     .hero h1 { font-size: 48px; font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
     .hero p { font-size: 20px; color: #e2e8f0; margin-bottom: 35px; font-weight: 400; }
     
@@ -66,8 +73,23 @@
     }
     .btn-action:hover { transform: translateY(-2px); background: #e07e12; box-shadow: 0 6px 20px rgba(244, 139, 23, 0.4); }
 
-    /* BLOCO DE CONCEITO UNIFICADO */
-    .block-max-width { max-width: 750px; margin: 0 auto; }
+    /* BLOCO 2 — NOVO LAYOUT LADO A LADO */
+    .grid-conceito {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+      align-items: center;
+      text-align: left;
+    }
+    .selo-arv-img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(11, 30, 54, 0.06);
+    }
 
     /* BLOCO 4 - FLUXO VISUAL */
     .fluxo-wrapper {
@@ -137,7 +159,7 @@
     }
     .participante-item span { font-size: 32px; }
 
-    /* BLOCO 7 - PERGUNTAS FREQUENTES AGRESSIVO */
+    /* BLOCO 7 - PERGUNTAS FREQUENTES */
     .faq-wrapper { max-width: 800px; margin: 50px auto 0 auto; text-align: left; }
     .faq-item { margin-bottom: 40px; border-bottom: 1px solid #e2e8f0; padding-bottom: 30px; }
     .faq-item:last-child { border-bottom: none; }
@@ -150,6 +172,7 @@
 
     /* RESPONSIVIDADE */
     @media (max-width: 1024px) {
+      .grid-conceito { grid-template-columns: 1fr; text-align: center; gap: 40px; }
       .cards-grid { grid-template-columns: repeat(2, 1fr); }
       .participantes-grid { grid-template-columns: repeat(2, 1fr); }
       .fluxo-wrapper { flex-direction: column; }
@@ -160,6 +183,7 @@
       .cards-grid { grid-template-columns: 1fr; }
       .participantes-grid { grid-template-columns: 1fr; }
       .section-padding { padding: 70px 0; }
+      .hero-logo-img { max-width: 220px; }
     }
   </style>
 </head>
@@ -168,7 +192,7 @@
   <section class="hero">
     <div class="container">
       <div class="hero-content">
-        <div class="logo-arv">AR VERIFICADO<span>®</span></div>
+        <img src="ar verificado logo.png" alt="AR VERIFICADO®" class="hero-logo-img">
         <h1>Confiança se verifica.</h1>
         <p>Programa de transparência e rastreabilidade para sistemas de climatização.</p>
         <a href="#como-funciona" class="btn-action">Como funciona</a>
@@ -177,16 +201,23 @@
   </section>
 
   <section class="section-padding">
-    <div class="container text-center block-max-width">
-      <h2>O ar que você respira também merece transparência.</h2>
-      
-      <p>Todos os dias, milhões de pessoas permanecem por hours em ambientes climatizados, como hotéis, clínicas, escolas, academias, supermercados e escritórios. Embora esses sistemas sejam essenciais para o conforto e bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
-      
-      <p style="margin-top: 25px; margin-bottom: 25px; font-weight: 600; color: var(--primary-navy); font-size: 18px;">
-        O AR VERIFICADO® nasceu para tornar essas informações acessíveis de forma simples, organizada e verificável.
-      </p>
-      
-      <p>Este é um programa de transparência que identifica equipamentos participantes por meio de um selo exclusivo e de um Registro Digital Oficial acessível por QR Code. Assim, qualquer pessoa pode consultar informações verificáveis sobre o histórico de manutenção daquele ambiente.</p>
+    <div class="container">
+      <div class="grid-conceito">
+        <div>
+          <h2>O ar que você respira também merece transparência.</h2>
+          
+          <p>Todos os dias, milhões de pessoas permanecem por horas em ambientes climatizados, como hotéis, clínicas, escolas, academias, supermercados e escritórios. Embora esses sistemas sejam essenciais para o conforto e o bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
+          
+          <p style="margin-top: 25px; margin-bottom: 25px; font-weight: 600; color: var(--primary-navy); font-size: 18px;">
+            O AR VERIFICADO® foi criado para tornar essas informações acessíveis de forma simples, organizada e verificável.
+          </p>
+          
+          <p>É um programa de transparência que identifica equipamentos participantes por meio de um selo exclusivo conectado a um <strong>Registro Digital Oficial</strong>, acessível por QR Code. Assim, qualquer pessoa pode consultar informações verificáveis sobre o histórico de manutenção daquele equipamento.</p>
+        </div>
+        <div>
+          <img src="Selo Ar Verificado.png" alt="Selo Oficial Ar Verificado" class="selo-arv-img">
+        </div>
+      </div>
     </div>
   </section>
 
