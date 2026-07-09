@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- GOOGLE ANALYTICS - SITE AR VERIFICADO -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3E2BXFCC2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -266,7 +265,9 @@
 
     /* BLOCO 6 - RODAPÉ */
     footer { padding: 60px 0; background: white; border-top: 1px solid #e2e8f0; }
-    .footer-logo-sc { height: 45px; width: auto; margin-bottom: 15px; }
+    .footer-logo-link { display: inline-block; text-decoration: none; transition: transform 0.2s; }
+    .footer-logo-link:hover { transform: scale(1.03); }
+    .footer-logo-sc { height: 45px; width: auto; margin-bottom: 15px; border: 0; display: block; margin-left: auto; margin-right: auto; }
 
     /* RESPONSIVIDADE */
     @media (max-width: 1024px) {
@@ -304,7 +305,7 @@
         <div>
           <h2>O ar que você respira também merece transparência.</h2>
           
-          <p>Todos os dias, milhões de pessoas permanecem por horas em ambientes climatizados, como hotéis, clínicas, escolas, academias, farmácias e escritórios. Embora esses sistemas sejam essenciais para o conforto e o bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
+          <p>Todos os dias, milhões de pessoas permanecem por hours em ambientes climatizados, como hotéis, clínicas, escolas, academias, farmácias e escritórios. Embora esses sistemas sejam essenciais para o conforto e o bem-estar, as informações sobre sua manutenção normalmente permanecem restritas aos responsáveis técnicos.</p>
           
           <p style="margin-top: 25px; margin-bottom: 25px; font-weight: 600; color: var(--primary-navy); font-size: 18px;">
             O AR VERIFICADO<sup>®</sup> foi criado para tornar essas informações acessíveis de forma simples, organizada e verificável.
@@ -430,7 +431,7 @@
         </details>
 
         <details class="faq-accordion">
-          <summary><span>O QR Code pode ser alterado?</span></summary>
+          <summary><span>O QR Code pode ser altered?</span></summary>
           <div class="faq-content">
             <p>Não. Cada equipamento possui um identificador exclusivo vinculado ao seu Registro Digital Oficial.</p>
           </div>
@@ -451,13 +452,15 @@
     <div class="container">
       <h2>Conheça a nossa história</h2>
       <p>O AR VERIFICADO<sup>®</sup> é uma iniciativa desenvolvida pela Refrigeração Super Carioca, referência em soluções de climatização de alta performance.</p>
-      <a href="#" class="btn-secondary">Quero conhecer a Refrigeração Super Carioca</a>
+      <a href="https://refrigeracaosupercarioca.vercel.app/?utm_source=ar_verificado&utm_medium=botao_cta_rodape&utm_campaign=parceria_interna" class="btn-secondary">Quero conhecer a Refrigeração Super Carioca</a>
     </div>
   </section>
 
   <footer class="text-center">
     <div class="container">
-      <img src="SuperCarioca.png" alt="Refrigeração Super Carioca" class="footer-logo-sc">
+      <a href="https://refrigeracaosupercarioca.vercel.app/?utm_source=ar_verificado&utm_medium=logo_footer&utm_campaign=parceria_interna" class="footer-logo-link" title="Ir para o site da Refrigeração Super Carioca">
+        <img src="SuperCarioca.png" alt="Refrigeração Super Carioca" class="footer-logo-sc">
+      </a>
       <p style="font-size: 13px; color: var(--text-muted); margin-top: 5px; margin-bottom: 0;">
         Programa desenvolvido pela Refrigeração Super Carioca.
       </p>
